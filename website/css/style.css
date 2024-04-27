@@ -1,0 +1,519 @@
+*{
+    box-sizing: border-box;
+}
+
+:root{
+    --green: #5DEBD7;
+    --dark-green: #1679AB;
+    --lighter-black:#555;
+}
+
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container{
+    width: 1170px;
+    margin: auto;
+}
+
+.clear-fix{clear: both;}
+
+/* header start */
+
+.slider{
+    background-image: url(../images/sliderrjpg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+    background-color: #fff;
+}
+
+.slider .container{
+    height: 100%;
+    margin-bottom: 0;
+}
+
+.intro{
+    padding-top: 250px;
+    height: 100%;
+    text-align: center;
+    color: #fff;
+}
+
+.intro h2{
+    font-size: 50px;
+    margin: 0 auto;
+    width: 600px;
+    border-top: 5px solid #fff;
+    border-bottom: 5px solid #fff;
+}
+
+.intro button{
+    text-transform: capitalize;
+    margin: 20px;
+    width: 150px;
+    padding: 5px;
+    font-size: 20px;
+    background-color: transparent;
+    color: #fff;
+    border: 3px solid #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.intro button:hover{
+    background-color: var(--green);
+    color: var(--dark-green);
+    border-color: var(--green);
+}
+
+header nav{
+    background-color: var(--dark-green);
+    color:#fff;
+    overflow: hidden;
+}
+
+header nav h2{float: left; text-transform: uppercase;}
+
+header nav h2 span{color: var(--green);}
+
+header nav ul{
+    list-style: none;
+    padding-left: 0;
+    overflow: hidden;
+    float: right;
+}
+
+header nav ul li:first-child{color: var(--green);}
+
+header nav ul li{float: left;padding: 10px;cursor: pointer;}
+
+header nav ul li:hover{color: var(--green);}
+
+/* header end */
+
+/* features start */
+
+.features{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.features .container{
+    display: flex;
+}
+
+.feat{
+    width: calc(100%/3);
+    height: 150px;
+}
+
+.feat h2{text-transform: capitalize; color: var(--lighter-black);}
+
+.feat p{opacity: .7;font-size: .8rem; line-height: 1.7;}
+
+/* features end */
+/* about me start */
+
+.about{
+    background-color: #f2f2f2;
+    overflow: hidden;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.about .image{
+    float: left;
+    width: 40%;
+}
+
+.about .image img{width: 100%;}
+
+.about .info{
+    float:left;
+    width: 60%;
+}
+
+.about .info h2{text-transform: capitalize; margin-left: 40px; margin-top: 10px; color: var(--lighter-black);} 
+
+.about .info>p{
+    margin-left: 40px;
+}
+
+.about .info h3{color: var(--lighter-black); text-transform: capitalize;}
+
+.about .info p{
+    opacity: .7;
+    line-height: 1.7;
+    margin-bottom: 0;
+}
+
+.about .info .hobbies{
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.about .info .hobbies div{
+    width: 50%;
+    min-height: 100px;
+    position: relative;
+    padding-left: 100px;
+}
+
+.about .info .hobbies div::before{
+    position: absolute;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900; 
+    content: "\f57d";
+    display: inline-block; 
+    font-style: normal; 
+    font-variant: normal; 
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    top: 40px;
+    left: 25px;
+    font-size: 40px;
+    color: var(--green);
+}
+
+.about .info .hobbies .two::before{content: "\f304";}
+.about .info .hobbies .three::before{content: "\f500";}
+.about .info .hobbies .four::before{content: "\f200";}
+/* about me end */
+/* my skills start */
+
+.my-skills{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    overflow: hidden;
+}
+
+.my-skills .skills,
+.my-skills .progress{
+    float: left;
+    width: 50%;
+}
+
+.my-skills h2{
+    text-transform: capitalize;
+    margin-top: 0;
+    margin-left: 20px;
+}
+
+
+.my-skills .skills p{
+    line-height: 1.7;
+}
+
+.my-skills .skills button{
+    text-transform: capitalize;
+    margin-top: 20px;
+    width: 150px;
+    padding: 5px;
+    font-size: 20px;
+    background-color: transparent;
+    color: var(--green);
+    border: 3px solid var(--green);
+    border-radius: 5px;
+    cursor: pointer;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.my-skills .skills button:hover{
+    background-color: var(--green);
+    color: var(--dark-green);
+}
+
+.my-skills .progress .tech{
+    margin: 20px;
+}
+
+.my-skills .progress .tech div{
+    margin: 20px;
+}
+.my-skills .progress .tech div div{
+    width: 100%;
+    background-color: #ddd;
+    position: relative;
+    height: 30px;
+    margin-left: 0;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+
+.my-skills .progress .tech h3{text-transform: uppercase;}
+
+.my-skills .progress .tech div div span{
+    background-color: var(--green);
+    height: 30px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    padding-right: 10px;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    color: #ddd;
+}
+
+/* .my-skills .progress .tech div div::before{
+    content: "90%";
+    height: 100%;
+    background-color: var(--green);
+    width: 50%;
+    z-index: 1;
+    position: absolute;
+    text-align: right;
+    
+} */
+
+/* my skills end */
+/* resume start */
+.resume{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    background-color: #f2f2f2;
+}
+
+.resume h2{text-transform: capitalize ; margin-bottom: 50px;}
+
+.resume p{line-height: 2;}
+
+.resume button{
+    margin-top: 20px;
+    width: 200px;
+    padding: 5px;
+    font-size: 20px;
+    background-color: transparent;
+    color: var(--green);
+    border: 3px solid var(--green);
+    border-radius: 5px;
+    cursor: pointer;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    margin-bottom: 30px;
+}
+
+.resume button:hover{
+    background-color: var(--green);
+    color: var(--dark-green);
+}
+/* resume end */
+/* my education start */
+.my-education{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    overflow: hidden;
+}
+
+.my-education .education,
+.my-education .exp{
+    float: left;
+    width: 50%;
+}
+
+.my-education .experiance,
+.my-education .work{
+    float: left;
+    width: 50%;
+}
+
+.my-education h2{
+    text-transform: capitalize;
+    margin-top: 0;
+    margin-left: 20px;
+}
+
+
+.my-education p{
+    line-height: 1.7;
+}
+
+.history{
+    margin-left: 30px;
+}
+
+.history h3{text-transform: uppercase;}
+
+.history .location{ text-transform: capitalize; opacity: .7;}
+
+.history .score{
+    text-transform: uppercase;
+    padding: 5px;
+    background-color: var(--green);
+    width: fit-content;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    color: var(--dark-green);
+    font-weight: bold;
+}
+
+.work .history .score{text-transform: capitalize;}
+
+/* my education end */
+/* testmonials start */
+.testmonials{
+    padding: 30px;
+    margin: top 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    background-color: #f2f2f2;
+}
+
+.testmonials h3{text-transform: capitalize ; margin-top: 40px; margin-bottom: 40px;}
+
+.testmonials p{margin-top: 30px; line-height: 2;}
+/* testmonials end */
+/* portfolio start */
+
+.portfolio{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    margin-top: 20px; 
+    margin-bottom: 20px; 
+}
+
+.achivements{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+    gap: 50px;
+}
+
+.achivements{
+    margin-bottom: 40px;
+}
+
+.achivements div img{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.portfolio p{
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+/* portfolio end */
+/* contact me start */
+.contact{
+    background-color: var(--dark-green) ;
+    color: #fff;
+    overflow: hidden;
+}
+
+.contact-info h2{text-transform: capitalize;}
+
+.contact-info p{
+    color: #93A8B9;
+    line-height: 1.7;
+}
+
+.contact-info,
+.form{
+    float: left;
+    width: 50%;
+}
+
+.contact-info p strong{color: #fff;}
+
+form{
+    padding-left: 20px;
+    margin-bottom: 100px;
+}
+
+label{
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+input{
+    width: 100%;
+    height: 50px;
+    background-color: #93A8B9;
+    border: none;
+}
+
+textarea{
+    background-color: #93A8B9;
+}
+
+form button{
+    text-transform: capitalize;
+    margin-top: 20px;
+    width: 150px;
+    padding: 5px;
+    font-size: 20px;
+    background-color: #191e22;
+    color: #fff;
+    border: 3px solid #191e22;
+    border-radius: 5px;
+    cursor: pointer;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+form button:hover{
+    background-color: #555;
+    color: #ddd;
+}
+
+/* contact me end */
+/* footer start */
+.footer{
+    background-color: #191e22;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer p{
+    color: #fff;
+    opacity: .7;
+    margin: 0;
+    text-align: center;
+}
+
+.footer ul{
+    padding-left: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.footer ul li{
+    list-style: none;
+    margin:5px;
+    color: var(--lighter-black);
+    cursor: pointer;
+    font-size: 25px;
+}
+
+.footer ul li:hover{
+    color: var(--green);
+}
+/* footer end */
