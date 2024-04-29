@@ -267,22 +267,15 @@ header nav ul li:hover{color: var(--green);}
     -moz-border-radius: 4px;
     -ms-border-radius: 4px;
     -o-border-radius: 4px;
-    color: #ddd;
+    color: var(--dark-green);
 }
 
-/* .my-skills .progress .tech div div::before{
-    content: "90%";
-    height: 100%;
-    background-color: var(--green);
-    width: 50%;
-    z-index: 1;
-    position: absolute;
-    text-align: right;
-    
-} */
 
 /* my skills end */
+
 /* resume start */
+
+
 .resume{
     padding-top: 50px;
     padding-bottom: 50px;
@@ -290,6 +283,19 @@ header nav ul li:hover{color: var(--green);}
     margin-bottom: 20px;
     text-align: center;
     background-color: #f2f2f2;
+    position: relative;
+}
+
+.resume::after{
+    position: absolute;
+    content: "";
+    z-index: 1;
+    background-color: #f2f2f2;
+    width: 50px;
+    height: 50px;
+    bottom: -15px;
+    left: 49%;
+    transform: rotate(45deg);
 }
 
 .resume h2{text-transform: capitalize ; margin-bottom: 50px;}
@@ -380,6 +386,12 @@ header nav ul li:hover{color: var(--green);}
     margin-bottom: 20px;
     text-align: center;
     background-color: #f2f2f2;
+    position: relative;
+}
+
+.testmonials span{
+    color: var(--green);
+    letter-spacing: 5px;
 }
 
 .testmonials h3{text-transform: capitalize ; margin-top: 40px; margin-bottom: 40px;}
@@ -408,7 +420,17 @@ header nav ul li:hover{color: var(--green);}
 }
 
 .achivements div img{
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    transition-duration: .5s;
+    cursor: pointer;
+}
+
+.achivements div img:hover{
+    scale: 1.1;
 }
 
 .portfolio p{
@@ -459,6 +481,7 @@ input{
 
 textarea{
     background-color: #93A8B9;
+    border: none;
 }
 
 form button{
@@ -479,41 +502,45 @@ form button{
 }
 
 form button:hover{
-    background-color: #555;
-    color: #ddd;
+    background-color: var(--green);
+    color: var(--dark-green);
+    border-color: var(--green);
 }
 
 /* contact me end */
 /* footer start */
-.footer{
+footer{
     background-color: #191e22;
     color: #fff;
     padding: 20px 0;
-    text-align: center;
+    overflow: hidden;
 }
 
-.footer p{
-    color: #fff;
-    opacity: .7;
+footer p{
+    float: left;
+    color: var(--dark-green);
     margin: 0;
     text-align: center;
+margin-top: 10px;
 }
 
-.footer ul{
+footer ul{
+    margin: 0;
+    float: right;
     padding-left: 0;
     display: flex;
     justify-content: center;
 }
 
-.footer ul li{
+footer ul li{
     list-style: none;
     margin:5px;
-    color: var(--lighter-black);
+    color: var(--dark-green);
     cursor: pointer;
     font-size: 25px;
 }
 
-.footer ul li:hover{
+footer ul li:hover{
     color: var(--green);
 }
 /* footer end */
